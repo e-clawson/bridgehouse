@@ -1,0 +1,74 @@
+body{
+    background-color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.main-container {
+    background-color: rgba(111, 107, 107, 0.899);
+    
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.second-container {
+    background-color: rgba(111, 107, 107, 0.899);
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    max-width: 250px;
+    padding: 2px;
+    margin-left: auto;
+    border: 3px solid gray;
+}
+
+.section1 {
+    border: 3px solid blue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section2 {
+    border: 3px solid orange;
+    padding: 10px;
+    flex: 30%;
+    float: right
+}
+
+.section3 {
+    border: 3px solid yellow;
+    padding: 10px;
+    flex: auto;
+}
+
+.box1 {
+    border: 1px solid black;
+    padding: 10px;
+    width: 60%;
+    flex-direction: row;
+}
+
+.box2 {
+    border: 1px solid black;
+    padding: 10px;
+    width: 30%;
+    float: right;
+}
+
+.box3 {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .section1 {
+        flex-direction: column;
+    }
+    .second-container {
+        flex-direction: column-reverse;
+    }
+}
